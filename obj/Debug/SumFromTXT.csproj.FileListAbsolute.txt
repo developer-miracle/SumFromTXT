@@ -1,0 +1,6 @@
+D:\SumFromTXT\SumFromTXT\bin\Debug\SumFromTXT.exe.config
+D:\SumFromTXT\SumFromTXT\bin\Debug\SumFromTXT.exe
+D:\SumFromTXT\SumFromTXT\bin\Debug\SumFromTXT.pdb
+D:\SumFromTXT\SumFromTXT\obj\Debug\SumFromTXT.csprojAssemblyReference.cache
+D:\SumFromTXT\SumFromTXT\obj\Debug\SumFromTXT.exe
+D:\SumFromTXT\SumFromTXT\obj\Debug\SumFromTXT.pdb
