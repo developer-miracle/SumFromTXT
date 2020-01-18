@@ -72,10 +72,13 @@ namespace SumFromTXT
         {
             Console.ForegroundColor = ConsoleColor.Cyan;
             for (int i = 0; i < output.Count; i++)
+            {
+                if (i == output.Count - 1)
+                    Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine(output[i]);
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.Write("\nСУММА: " + sum + "грн");
+            }
             Console.ResetColor();
+            
         }
     }
 }
