@@ -11,9 +11,10 @@ namespace SumFromTXT
         static void Main(string[] args)
         {
             SumTravel sum = new SumTravel("text.txt");
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.Write("\nСУММА: " + sum.ReadStream() + "грн");
-            Console.ResetColor();
+            
+            sum.ReadStream();
+            sum.Print();
+            
 
 
             Console.ReadKey(true);

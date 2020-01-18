@@ -4,3 +4,10 @@ D:\SumFromTXT\SumFromTXT\bin\Debug\SumFromTXT.pdb
 D:\SumFromTXT\SumFromTXT\obj\Debug\SumFromTXT.csprojAssemblyReference.cache
 D:\SumFromTXT\SumFromTXT\obj\Debug\SumFromTXT.exe
 D:\SumFromTXT\SumFromTXT\obj\Debug\SumFromTXT.pdb
+G:\PROGRAMMING\VSprojects\SumFromTXT\SumFromTXT\bin\Debug\SumFromTXT.exe.config
+G:\PROGRAMMING\VSprojects\SumFromTXT\SumFromTXT\bin\Debug\SumFromTXT.exe
+G:\PROGRAMMING\VSprojects\SumFromTXT\SumFromTXT\bin\Debug\SumFromTXT.pdb
+G:\PROGRAMMING\VSprojects\SumFromTXT\SumFromTXT\obj\Debug\SumFromTXT.csprojAssemblyReference.cache
+G:\PROGRAMMING\VSprojects\SumFromTXT\SumFromTXT\obj\Debug\SumFromTXT.csproj.CoreCompileInputs.cache
+G:\PROGRAMMING\VSprojects\SumFromTXT\SumFromTXT\obj\Debug\SumFromTXT.exe
+G:\PROGRAMMING\VSprojects\SumFromTXT\SumFromTXT\obj\Debug\SumFromTXT.pdb

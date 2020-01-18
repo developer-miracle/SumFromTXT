@@ -9,6 +9,8 @@ namespace SumFromTXT
 {
     class SumTravel
     {
+        private List<string> output = new List<string>();
+        private double sum;
         private string Path { get; set; }
         public SumTravel(string path)
         {
@@ -17,30 +19,26 @@ namespace SumFromTXT
         //читаем файл и вычисляем сумму
         public double ReadStream()
         {
-            List<string> output = new List<string>();
-            double sum = 0;
             string sumStr, modifySumStr;
             try
             {
                 using (FileStream fs = new FileStream(Path, FileMode.Open, FileAccess.Read, FileShare.None))
                 {
-                    using (StreamReader reader = new StreamReader(fs, Encoding.Unicode))
+                    using (StreamReader reader = new StreamReader(fs/*, Encoding.Unicode*/))
                     {
                         while (reader.Peek() != -1)
                         {
                             sumStr = reader.ReadLine();
                             modifySumStr = sumStr.Substring(sumStr.IndexOf(':') + 1);
                             output.Add(sumStr);
-                            Console.WriteLine(sumStr);
                             if (double.TryParse(modifySumStr, out double result))
                             {
                                 output.Add(modifySumStr);
-                                Console.WriteLine(modifySumStr);
                                 sum += result;
                                 output.Add("(" + sum + ")");
-                                Console.WriteLine("(" + sum + ")");
                             }
                         }
+                        output.Add("\nСУММА: " + sum + "грн");
                     }
                 }
             }
@@ -60,11 +58,24 @@ namespace SumFromTXT
         {
             using (FileStream fs = new FileStream("answer.txt", FileMode.Create, FileAccess.Write, FileShare.None))
             {
-                using (StreamWriter sw = new StreamWriter(fs, Encoding.Unicode))
+                using (StreamWriter writer = new StreamWriter(fs/*, Encoding.Unicode*/))
                 {
-
+                    for (int i = 0; i < output.Count; i++)
+                    {
+                        writer.WriteLine(output[i]);
+                    }
                 }
             }
+        }
+
+        public void Print()
+        {
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            for (int i = 0; i < output.Count; i++)
+                Console.WriteLine(output[i]);
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write("\nСУММА: " + sum + "грн");
+            Console.ResetColor();
         }
     }
 }
